@@ -1,98 +1,70 @@
-<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" >
-
+<head>
+    <meta charset="utf-8"/>
+<meta name="description" content=""/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>macOS 11 Big Sur Beta VM虚拟机 安装教程 | 某真鸽子的贝壳</title>
-
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-
-<link rel="stylesheet" href="https://cdn.whatz2333.top/css/gridea/simple/simple-all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://rua.pet/favicon.ico?v=1596711241251">
+<link rel="shortcut icon" href="https://rua.pet/favicon.ico?v=1596711446307">
+<link href="https://cdn.bootcss.com/font-awesome/5.11.2/css/all.css" rel="stylesheet">
 <link rel="stylesheet" href="https://rua.pet/styles/main.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/highlight.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dockerfile.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dart.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/go.min.js"></script>
+<script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+<!-- DEMO JS -->
+<!--<script src="media/scripts/index.js"></script>-->
 
 
-  
-    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
-  
 
-  
-
-
-<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-161212496-4"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-161212496-4');
-</script>
-
-
-    <meta name="description" content="安装VM
-下载软件:https://www.yun.cn/s/7ecbd54a04c94d6baaeb63c88ac4c2ae
-打开安装包后等待以下,看看网页啥的,等待程序准备文件,等出现界面的时候点击下一步即可
-
-这个必须点击“我接受许可..." />
-    <meta name="keywords" content="" />
-  </head>
-  <body>
-    <div id="app" class="main">
-
-      <div class="sidebar" :class="{ 'full-height': menuVisible }">
-  <div class="top-container" data-aos="fade-right">
-    <div class="top-header-container">
-      <a class="site-title-container" href="https://rua.pet">
-        <img src="https://rua.pet/images/avatar.png?v=1596711241251" class="site-logo">
-        <h1 class="site-title">某真鸽子的贝壳</h1>
-      </a>
-      <div class="menu-btn" @click="menuVisible = !menuVisible">
-        <div class="line"></div>
-      </div>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+</head>
+<body>
+<div class="main gt-bg-theme-color-first">
+    <nav class="navbar navbar-expand-lg">
+    <div class="navbar-brand">
+        <img class="user-avatar" src="/images/avatar.png" alt="头像">
+        <div class="site-name gt-c-content-color-first">
+            某真鸽子的贝壳
+        </div>
     </div>
-    <div>
-      
-    </div>
-  </div>
-  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
-    <div class="social-container">
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    </div>
-    <div class="site-description">
-      干啥啥不行,折腾第一名
-    </div>
-    <div class="site-footer">
-       | <a class="rss" href="https://rua.pet/atom.xml" target="_blank">RSS</a>
-    </div>
-  </div>
-</div>
-
-
-      <div class="main-container">
-        <div class="content-container" data-aos="fade-up">
-          <div class="post-detail">
-            <h2 class="post-title">macOS 11 Big Sur Beta VM虚拟机 安装教程</h2>
-            <div class="post-date">2020-08-06</div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars gt-c-content-color-first" style="font-size: 18px"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="navbar-nav mr-auto" style="text-align: center">
             
-              <div class="feature-container" style="background-image: url('https://rua.pet/post-images/macos-11-big-sur-beta-vm-xu-ni-ji-an-zhuang-jiao-cheng.png')">
-              </div>
-            
-            <div class="post-content" v-pre>
-              <h2 id="安装vm">安装VM</h2>
+        </div>
+    </div>
+</nav>
+    <div class="post-container">
+        <div class="post-detail gt-bg-theme-color-second">
+            <article class="gt-post-content">
+                <h2 class="post-title">
+                    macOS 11 Big Sur Beta VM虚拟机 安装教程
+                </h2>
+                <div class="post-info">
+                    <time class="post-time gt-c-content-color-first">
+                        · 2020-08-06 ·
+                    </time>
+                    
+                </div>
+                <div class="post-content">
+                    <h2 id="安装vm">安装VM</h2>
 <p>下载软件:https://www.yun.cn/s/7ecbd54a04c94d6baaeb63c88ac4c2ae</p>
 <p>打开安装包后等待以下,看看网页啥的,等待程序准备文件,等出现界面的时候点击下一步即可</p>
 <figure data-type="image" tabindex="1"><img src="https://images.weserv.nl/?url=https://cdn.luogu.com.cn/upload/image_hosting/yfeeytjv.png" alt="" loading="lazy"></figure>
@@ -205,74 +177,79 @@ board-id = &quot;Mac-E1008331FDC96864&quot;
 <p>点击重启即可</p>
 <figure data-type="image" tabindex="65"><img src="https://blog.rua.pet/usr/uploads/2020/08/06/vmmac/Snipaste_2020-08-06_11-35-22.png" alt="" loading="lazy"></figure>
 
-            </div>
-            
-            
-              <div class="next-post">
-                <div class="next">下一篇</div>
-                <a href="https://rua.pet/post/kuai-su-zhuan-cun-gd-zi-yuan-dao-zi-ji-di-gd-wu-xu-vps/">
-                  <h3 class="post-title">
-                    快速转存GD资源到自己滴GD-无需VPS
-                  </h3>
-                </a>
-              </div>
-            
-
-            
-              
-                <div id="gitalk-container" data-aos="fade-in"></div>
-              
-
-              
-            
-
-          </div>
-
+                </div>
+            </article>
         </div>
-      </div>
-    </div>
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script type="application/javascript">
+        
+            <div class="next-post">
+                <div class="next gt-c-content-color-first">下一篇</div>
+                <a href="https://rua.pet/post/kuai-su-zhuan-cun-gd-zi-yuan-dao-zi-ji-di-gd-wu-xu-vps/" class="post-title gt-a-link">
+                    快速转存GD资源到自己滴GD-无需VPS
+                </a>
+            </div>
+        
 
-AOS.init();
+        
+            
+                <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
 
-var app = new Vue({
-  el: '#app',
-  data: {
-    menuVisible: false,
-  },
-})
+<div id="gitalk-container"></div>
+
+<script>
+
+  var gitalk = new Gitalk({
+    clientID: ' 7e42688839308e4b8d1b',
+    clientSecret: '26d308e3c6fbdb2fb5913828e26b3852f6c6c436',
+    repo: 'WhatZ2333.github.io',
+    owner: 'WhatZ2333',
+    admin: ['WhatZ2333'],
+    id: location.pathname,      // Ensure uniqueness and length less than 50
+    distractionFreeMode: false  // Facebook-like distraction free mode
+  })
+
+  gitalk.render('gitalk-container')
 
 </script>
 
+            
+
+            
+        
+
+        <div class="site-footer gt-c-content-color-first">
+    <div class="slogan gt-c-content-color-first">干啥啥不行,折腾第一名</div>
+    <div class="social-container">
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    </div>
+    <div class="footer-info">
+        
+    </div>
+    <div>
+        Theme by <a href="https://imhanjie.com/" target="_blank">imhanjie</a>, Powered by <a
+                href="https://github.com/getgridea/gridea" target="_blank">Gridea | <a href="https://rua.pet/atom.xml" target="_blank">RSS</a></a>
+    </div>
+</div>
+
+<script>
+    hljs.initHighlightingOnLoad()
+</script>
 
 
-
-
-  
-    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
-    <script>
-
-      var gitalk = new Gitalk({
-        clientID: ' 7e42688839308e4b8d1b',
-        clientSecret: '26d308e3c6fbdb2fb5913828e26b3852f6c6c436',
-        repo: 'WhatZ2333.github.io',
-        owner: 'WhatZ2333',
-        admin: ['WhatZ2333'],
-        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
-        distractionFreeMode: false  // Facebook-like distraction free mode
-      })
-
-      gitalk.render('gitalk-container')
-
-    </script>
-  
-
-  
-
-
-
-
-  </body>
+    </div>
+</div>
+</body>
 </html>
