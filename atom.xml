@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://rua.pet</id>
     <title>某真鸽子的贝壳</title>
-    <updated>2020-08-07T00:56:25.493Z</updated>
+    <updated>2020-08-07T00:58:59.423Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://rua.pet"/>
     <link rel="self" href="https://rua.pet/atom.xml"/>
@@ -10,6 +10,13 @@
     <logo>https://rua.pet/images/avatar.png</logo>
     <icon>https://rua.pet/favicon.ico</icon>
     <rights>All rights reserved 2020, 某真鸽子的贝壳</rights>
+    <entry>
+        <title type="html"><![CDATA[TrafficMonitor – 网速/内存/CPU实时监测工具]]></title>
+        <id>https://rua.pet/post/trafficmonitor-wang-su-nei-cun-cpu-shi-shi-jian-ce-gong-ju/</id>
+        <link href="https://rua.pet/post/trafficmonitor-wang-su-nei-cun-cpu-shi-shi-jian-ce-gong-ju/">
+        </link>
+        <updated>2020-08-07T00:58:18.000Z</updated>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Sakura Frp 建站教程]]></title>
         <id>https://rua.pet/post/sakura-frp-jian-zhan-jiao-cheng/</id>
