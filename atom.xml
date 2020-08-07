@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://rua.pet</id>
     <title>某真鸽子的贝壳</title>
-    <updated>2020-08-07T04:32:10.305Z</updated>
+    <updated>2020-08-07T04:47:06.011Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://rua.pet"/>
     <link rel="self" href="https://rua.pet/atom.xml"/>
@@ -10,6 +10,13 @@
     <logo>https://rua.pet/images/avatar.png</logo>
     <icon>https://rua.pet/favicon.ico</icon>
     <rights>All rights reserved 2020, 某真鸽子的贝壳</rights>
+    <entry>
+        <title type="html"><![CDATA[IDM的“免费版”NDM免费的下载工具]]></title>
+        <id>https://rua.pet/post/idm-de-mian-fei-ban-ndm-mian-fei-de-xia-zai-gong-ju/</id>
+        <link href="https://rua.pet/post/idm-de-mian-fei-ban-ndm-mian-fei-de-xia-zai-gong-ju/">
+        </link>
+        <updated>2020-08-07T04:46:37.000Z</updated>
+    </entry>
     <entry>
         <title type="html"><![CDATA[NameBeta – 多家比价以节省咱的域名注册成本]]></title>
         <id>https://rua.pet/post/namebeta-duo-jia-bi-jie-yi-jie-sheng-zan-de-yu-ming-zhu-ce-cheng-ben/</id>
